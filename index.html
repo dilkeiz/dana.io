@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>II</title>
+  <meta name="title" content="II">
+  <meta name="description" content="This is a Book eCommerce html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Work+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/iairobot.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="header-top">
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logoii.png" width="138" height="28" alt="booken home">
+        </a>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search our store" class="input-field">
+
+          <button class="btn btn-primary">Іздеу</button>
+        </div>
+
+        <div class="header-action">
+
+          
+
+          <button class="nav-open-btn" aria-label="open menu" title="Open Menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="header-action-btn" aria-label="user" title="User">
+            <ion-icon name="person-outline" aria-hidden="true"> 
+             
+              <div class="login-container">
+                <button class="login-icon" onclick="toggleLogin()">Кіру</button>
+              
+                <div id="loginModal" class="login-modal">
+                  <div class="login-content">
+                    <span class="close-btn" onclick="toggleLogin()">&times;</span>
+                    <h1 class="card-title" style="color: black;">Кіру</h1>
+
+                    <form method="POST" class="needs-validation" novalidate="">
+                      <div class="form-group">
+                        <label for="email">E-Mail почта</label>
+                        <input id="email" type="email" class="form-control" name="email" required>
+                       </div>
+                      <div class="form-group">
+                        <label for="password">Құпиясөз</label>
+                        <input id="password" type="password" class="form-control" name="password" required>
+                       </div>
+                      <button type="submit" class="btn btn-primary">Кіру</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              
+        
+            </ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title has-after">
+              Мені қызықтырған Әлем <br>
+            </h1>
+
+            <p class="hero-text">
+              Менің жобам: "Жасанды интеллект оның мүмкіндіктері мен әлеуеті".
+            </p>
+
+            <div class="btn-wrapper">
+
+              <button class="play-btn" aria-label="play video">
+                <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/iairobot.png" width="475" height="600" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+  
+
+
+      <!-- 
+        - #FEATURE
+      -->
+      <section class="section blog" aria-label="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title">Жасанды интеллект түрлері:</h2>
+
+          <p class="section-text">
+             
+          </p>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/siri.jpg" width="600" height="400" loading="lazy"
+                    alt="Significant reading has info" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"> Әлсіз ЖИ (Narrow AI)</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    
+
+                  </ul>
+
+                  <p class="card-text">
+                    Бұл қазіргі уақытта ең кең таралған жасанды интеллект түрі. Әлсіз ЖИ белгілі бір тапсырмаларды орындауға арналған және кең ауқымды ойлау, өзін-өзі үйрету немесе түсіну қабілетіне ие емес.
+                  </p>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/strong.jfif" width="600" height="400" loading="lazy"
+                    alt="Activities Book International" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Күшті ЖИ (General AI)</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+ 
+
+                  </ul>
+
+                  <p class="card-text">
+                    Күшті ЖИ — бұл кез келген интеллектуалдық тапсырманы адам сияқты орындай алатын жүйе. Мұндай ЖИ өзін-өзі үйрене алады, ақпаратты түсініп, ойлай алады, мәселелерді шешіп, жаңа жағдайларға бейімделе алады. Қазіргі уақытта күшті ЖИ тек теорияда бар және оны жасауға ғалымдар мен инженерлер ұмтылып келеді.
+                  </p>
+
+ 
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/maxresdefault.jpg" width="600" height="400" loading="lazy"
+                    alt="International activities of the book" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Суперинтеллект (Superintelligent AI)</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                     
+
+                  </ul>
+
+                  <p class="card-text">
+                    Суперинтеллект — бұл гипотетикалық жасанды интеллект деңгейі, ол адам интеллектінен әлдеқайда жоғары болады. Бұл ЖИ кез келген салаларда, соның ішінде шығармашылық ойлауда, адам мүмкіндігінен асып түседі.
+                  </p>
+
+ 
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- 
+        - #FEATURED COLLECTION
+      -->
+
+      <section class="section featured" aria-label="featured collection">
+        <div class="container">
+
+          <h2 class="h2 section-title">Оқулыктар жинағы </h2>
+
+          <p class="section-text">
+            7 сынып оқулықтары 
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="product-card">
+
+                <span class="card-badge">New</span>
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/history.jpg" width="384" height="480" loading="lazy" alt="history"
+                    class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Дүниежүзі тарихы</a>
+                  </h3>
+                  <data class="card-price" value="55"> Год:	2017
+                     <p>Страниц: 144</p>
+                  </data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/kazak.jpg" width="384" height="480" loading="lazy"
+                    alt="Kazakh" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Қазақ тілі </a>
+                  </h3>
+                  
+                  <data class="card-price" value="55"> Год:	2018
+                    <p>Страниц: 305</p>
+                 </data>
+ 
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/geom.jpg" width="384" height="480" loading="lazy" alt="Geom"
+                    class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Геометрия</a>
+                  </h3>
+                  <data class="card-price" value="55"> Год:	2018<p>Страниц:	145</p>
+                     </data>
+ 
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/geor.jpg" width="384" height="480" loading="lazy" alt="Geo"
+                    class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">География</a>
+                  </h3>
+
+                  <data class="card-price" value="55"> Год:	2017
+                    <p>Страниц: 144</p>
+                 </data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/khistory.jpg" width="384" height="480" loading="lazy"
+                    alt="" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Қазақстан тарихы</a>
+                  </h3>
+
+                  <data class="card-price" value="55"> Год:	2017 
+                    <p>Страниц: 240</p>
+                 </data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/biolog.jpg" width="384" height="480" loading="lazy" alt=""
+                    class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Биология</a>
+                  </h3>
+
+                  <data class="card-price" value="55"> Год:	2017
+                    <p>Страниц: 257</p>
+                 </data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/inf.jpg" width="384" height="480" loading="lazy"
+                    alt="Murdering Last Year" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Информатика </a>
+                  </h3>
+
+                  <data class="card-price" value="55"> Год:	2017
+                    <p>Страниц: 176</p>
+                 </data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/khim.jpg" width="384" height="480" loading="lazy" alt=""
+                    class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Химия</a>
+                  </h3>
+
+                  <data class="card-price" value="55"> Год:	2018
+                    <p>Страниц: 145</p>
+                 </data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #OFFER
+      -->
+      <section class="section offer has-bg-image" aria-label="special offer" 
+      style="background-image: url('./assets/images/section-bg.jpg')">
+<div class="container">
+ <div class="carousel">
+   <div class="carousel-slide active">
+     <video controls>
+       <source src="./assets/video/aivideo1.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+     </video>
+   </div>
+   <div class="carousel-slide">
+     <video controls>
+       <source src="./assets/video/chatGPT.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+     </video>
+   </div>
+   <div class="carousel-slide">
+     <video controls>
+       <source src="./assets/video/suno.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+     </video>
+   </div>
+   <div class="carousel-slide">
+    <video controls>
+      <source src="./assets/video/presentation.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+   <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+   <button class="next" onclick="changeSlide(1)">&#10095;</button>
+ </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="section popular" aria-label="popular collection">
+        <div class="container">
+
+          <h1 class="h2 section-title">Жасанды интеллект жайлы кітаптар:</h1>
+
+          <p class="section-text">
+           </p>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn" data-filter-btn="featured"> </button>
+            </li>
+ 
+
+          </ul>
+
+          <ul class="product-list has-scrollbar">
+
+            <li class="scrollbar-item" data-filter="sell">
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/ii5.jpg" width="384" height="480" loading="lazy" alt="Food Poison"
+                    class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                   </h3>
+ 
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item" data-filter="sell">
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/ii2.jpg" width="384" height="480" loading="lazy" alt="Monsoon"
+                    class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                   </h3>
+
+                   
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item" data-filter="featured">
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/ii3.jpg" width="384" height="480" loading="lazy"
+                    alt="Every Thing You Ever" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                   </h3>
+ 
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item" data-filter="new">
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/ii4.PNG" width="384" height="480" loading="lazy"
+                    alt="Graphic Design School" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                   </h3>
+ 
+
+                </div>
+
+              </div>
+            </li>
+
+            
+
+            <li class="scrollbar-item" data-filter="featured">
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/ii.jpg" width="384" height="480" loading="lazy" alt="Design"
+                    class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                   </h3>
+ 
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item" data-filter="new">
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="./assets/images/ii6.jpg" width="384" height="480" loading="lazy" alt="World News"
+                    class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                   </h3>
+
+              
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+       
+
+    </article>
+  </main>
+
+
+  
+ 
+  
+
+  
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/section-bg.jpg')">
+
+       <div class="container" style="display: flex; justify-content: center; align-items: center; height: 30vh;flex-direction: column;"">
+  
+ <ion-icon name="book" style="font-size: 64px; margin-bottom: 20px;"></ion-icon>
+ <div class="btn-wrapper">
+          <a href="./assets/images/күнделік дана.pdf" target="_blank" class="btn" style="padding: 20px 40px; font-size: 24px; background-color: #007bff; color: white; border-radius: 8px; text-decoration: none; display: flex; align-items: center;">
+            <span class="span">Күнделік</span>
+           </a>
+        </div>
+       </div>
+
+    <div class="footer-top section">
+      <div class="container" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  
+        <!-- Место для картины с зумом -->
+        <a href="./assets/images/swot.jfif" data-lightbox="image-1" style="cursor: zoom-in;">
+          <img src="./assets/images/swot.jfif" alt="Artwork" style="max-width: 100%; height: auto; border-radius: 10px;">
+        </a>
+  
+      </div>
+    </div>
+  
+  </footer>
+  
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ </body>
+
+</html>
